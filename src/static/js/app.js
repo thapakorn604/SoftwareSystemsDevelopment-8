@@ -4,12 +4,27 @@ function App() {
         <Container>
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
+                    <Row>
+                        <Title />
+                    </Row>
                     <TodoListCard />
                 </Col>
             </Row>
         </Container>
     );
 }
+
+import React from 'react'
+
+function Title() {
+  return (
+    <div>
+      <h1>TODO List by Tuwaemuesa Thapakorn</h1>
+    </div>
+  )
+}
+
+export default Title
 
 function TodoListCard() {
     const [items, setItems] = React.useState(null);
