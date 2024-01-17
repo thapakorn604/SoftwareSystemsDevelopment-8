@@ -4,9 +4,11 @@ function App() {
         <Container>
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
-                    <Row>
-                        <Title />
-                    </Row>
+                    <Title />
+                </Col>
+            </Row>
+            <Row>
+                <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
                 </Col>
             </Row>
@@ -21,8 +23,6 @@ function Title() {
     </div>
   )
 }
-
-export default Title
 
 function TodoListCard() {
     const [items, setItems] = React.useState(null);
